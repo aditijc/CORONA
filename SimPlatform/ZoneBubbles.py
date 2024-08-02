@@ -79,8 +79,8 @@ class ZoneBubbles:
         self.A=self.A[flag]
         
     def image(self):
-        locx=np.round(self.x/self.pixel[0]).astype(np.int)
-        locy=np.round(self.y/self.pixel[1]).astype(np.int)
+        locx=np.round(self.x/self.pixel[0]).astype(int)
+        locy=np.round(self.y/self.pixel[1]).astype(int)
         A=np.zeros(self.shape,dtype=np.complex128)
         
         A[tuple(locy),tuple(locx)]=self.A
